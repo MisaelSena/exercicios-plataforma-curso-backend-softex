@@ -15,7 +15,7 @@ let qtdRodas = 4;
 let pesoVeiculo = 6001;
 let capacidadePessoasVeiculo = 9;
 
-if(qtdRodas<=3){
+if(qtdRodas > 1 && qtdRodas<=3){
     console.log("A: Veículos com duas ou três rodas");
 }else if(qtdRodas >= 4 && capacidadePessoasVeiculo <= 8 && pesoVeiculo <= 3500){
     console.log("B: Veículos com quatro rodas, que acomodam até oito pessoas e seu peso é de até 3500 kg");
