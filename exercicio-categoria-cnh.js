@@ -1,4 +1,4 @@
-/*  Desenvolva um código, utilizando o Google Blockly, que utilize as seguintes características de um veículo:
+/*  Desenvolva um código, que utilize as seguintes características de um veículo:
     - Quantidade de rodas;
     - Peso bruto em quilogramas;
     - Quantidade de pessoas no veículo.
@@ -11,6 +11,18 @@
     E: Veículos com quatro rodas ou mais e com mais de 6000 kg.
 */
 
-let qtdRodas = 2;
-let pesoVeiculo = 200;
-let capacidadePessoasVeiculo = 2;
+let qtdRodas = 4;
+let pesoVeiculo = 6001;
+let capacidadePessoasVeiculo = 9;
+
+if(qtdRodas<=3){
+    console.log("A: Veículos com duas ou três rodas");
+}else if(qtdRodas >= 4 && capacidadePessoasVeiculo <= 8 && pesoVeiculo <= 3500){
+    console.log("B: Veículos com quatro rodas, que acomodam até oito pessoas e seu peso é de até 3500 kg");
+}else if(qtdRodas >= 4 && capacidadePessoasVeiculo <= 8 && pesoVeiculo > 3500 && pesoVeiculo <= 6000){
+    console.log("C: Veículos com quatro rodas ou mais e com peso entre 3500 e 6000 kg");
+}else if(qtdRodas >= 4 && capacidadePessoasVeiculo > 8 && pesoVeiculo > 3500 && pesoVeiculo <= 6000){
+    console.log("D: Veículos com quatro rodas ou mais e que acomodam mais de oito pessoas");
+}else if(qtdRodas >= 4 && pesoVeiculo > 6000){
+    console.log("E: Veículos com quatro rodas ou mais e com mais de 6000 kg");
+}
