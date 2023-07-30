@@ -72,7 +72,7 @@ function calculadora() {
                     break;        
                     
                 default:
-                    console.log(`Valores incorretos! O resultado é: ${resultado}`);
+                    console.log("Essa opção não existe!");
                     calculadora();
                     break;             
              }
