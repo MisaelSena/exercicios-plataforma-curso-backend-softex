@@ -37,9 +37,9 @@ function calculadora() {
             break;
         
         case "/":
-        resultado = numero1 / numero2;
-        console.log(`O resultado da Divisão é: ${resultado}`);        
-        break;
+            resultado = numero1 / numero2;
+            console.log(`O resultado da Divisão é: ${resultado}`);        
+            break;
     
         default:
             console.log(`Valores incorretos! O resultado é: ${resultado}`);            
